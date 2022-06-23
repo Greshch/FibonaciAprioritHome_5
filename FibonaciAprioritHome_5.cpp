@@ -5,6 +5,18 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "Input num of fibonaci : ";
+    int num = 0;
+    std::cin >> num;
+    int a = 0;
+    int b = 1;
+    for (int i = 0; i < num; ++i)
+    {
+        int sum = a + b;
+        std::cout << i + 1 << ".\t" << a << "\n";
+        a = b;
+        b = sum;
+        
+    }
 }
 
